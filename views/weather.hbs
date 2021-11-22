@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/tailwind.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <!-- main form -->
+    {{>search}}
+
+    <div class="bg-gray-300 flex justify-between items-center lg:flex-row p-10 lg:w-1/2 mx-auto ">
+        <div class="">
+            <h1 class="mb-5 text-gray-700 font-medium lg:text-4xl sm:text-lg xs:font-bold md:font-bold capitalize">{{city}} Weather</h1>
+            <p class="mb-5 lg:text-5xl sm:text-lg">{{temp}} °C</p>
+            <p class="mb-5 capitalize lg:text-2xl sm:text-lg">{{desc}}</p>
+        </div>
+                
+        <div class="">
+            <img src="{{imageUrl}}" class="" alt="weather image">
+        </div>
+    </div>
+</body>
+</html>
