@@ -8,8 +8,8 @@
   "main": "index.js",
   "scripts": {
     "build": "postcss css/style.css -o public/build/tailwind.css",
-    "start": "node index.js",
-    "dev": "nodemon src/index.js"
+    "start": "node index.js"
+    
   },
   "keywords": [],
   "author": "",
