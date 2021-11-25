@@ -2,9 +2,14 @@
   "name": "weathertw",
   "version": "1.0.0",
   "description": "",
+  "engines": {
+    "node": "16.x"
+  },
   "main": "index.js",
   "scripts": {
-    "build": "postcss css/style.css -o public/build/tailwind.css"
+    "build": "postcss css/style.css -o public/build/tailwind.css",
+    "start": "node index.js",
+    "dev": "nodemon src/index.js"
   },
   "keywords": [],
   "author": "",
